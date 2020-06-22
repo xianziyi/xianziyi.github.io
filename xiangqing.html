@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" type="image/png" href="images/icon.png"/>
+	<base target="_self">
+	<title>图书详情页</title>
+</head>
+<body class="container">
+	<!-- 导航栏 -->
+	<div class="navbar-wrapper">
+		<nav class="navbar navbar-default navbar-static-top">
+			<!-- 导航标题和缩小按钮 -->
+			<div class="navbar-header">
+				<button data-target="#navbarCollapse" type="button" class="navbar-toggle" data-toggle="collapse">
+					<span class="sr-only">Toggle navigation</span><!-- UNknown -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- 导航栏正文 -->
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li><a href="jieguo.html">
+						<span class="glyphicon glyphicon-bookmark"></span>&nbsp;每日推荐
+						</a>
+					</li>
+					<li>
+						<a href="jieguo.html">
+							<span class="glyphicon glyphicon-pencil"></span>&nbsp;人气作家
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="jieguo.html">
+							<span class="glyphicon glyphicon-fire"></span>&nbsp;畅销作品
+						</a>
+					</li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right" style="margin-right: 0px"> 
+					<li>
+						<a href="denglu.html">
+							<span class="glyphicon glyphicon-log-in"></span>&nbsp;登陆
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<!-- 搜索栏 -->
+	<div class="row bot ss">
+		<div class="col-sm-3">
+			<a href="index.html">
+				<img class="img-responsive" src="images/logo.png" title="我阅网">
+			</a>	
+		</div>
+		<div class="col-sm-5">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="请输入关键字">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-info">搜索图书</button>
+				</span>
+			</div><!-- input-group -->
+			<div class="col-sm-8" id="recom">
+				<ul class="list-inline">
+					<li><a href="xiangqing.html"><small>雷军自传</small></a></li>
+					<li><a href="xiangqing.html"><small>韩寒全集</small></a></li>
+					<li><a href="xiangqing.html"><small>龙族</small></a></li>
+				</ul>
+			</div>
+		</div><!-- col-sm-6 -->
+	</div><!-- row -->
+	
+	<!-- 图书 -->
+		<div class="row">
+			<div class="col-sm-9 botBorder">
+				<!-- book图片 -->
+				<div class="col-sm-4">
+					<div class="row">
+						<img id="bookImg" class="img-responsive img-rounded" src="images/detail/book.jpg" title="book1">
+					</div>
+					<div class="list-inline text-center" id="bookImgList">
+						<li>
+							<a href="" class="greyFont" title="收藏"><span class="glyphicon glyphicon-heart-empty"></span></a>
+						</li>
+						<li>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="" class="greyFont" title="下载"><span class="glyphicon glyphicon-download-alt"></span></a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+						</li>
+						<li>
+							<a href="" class="greyFont" title="分享"><span class="glyphicon glyphicon-share-alt"></span></a>	
+						</li>
+					</div>
+				</div>
+
+				<!-- book信息 -->
+				<div class="col-sm-8 ">
+					<!-- title -->
+					<h2>何以笙箫默</h2>
+					<!-- 书本标签 -->
+					<div class="bookLabel">
+						<ul class="list-inline">
+							<li><span class="label label-success">言情</span></li>
+							<li><span class="label label-default">小说</span></li>
+							<li><span class="label label-default">爱情</span></li>
+							<li><span class="label label-default">温暖</span></li>
+							<li><span class="label label-default">青春</span></li>
+						</ul>
+					</div>
+
+					<!-- 引用 -->
+					<div>
+						<blockquote>
+							<h5>2015热播剧原著小说</h5>
+							<footer>顾漫</footer>
+						</blockquote>
+						<p><span class="glyphicon glyphicon-eye-open"></span>&nbsp;<strong>1200</strong>人在读</p>
+					</div>
+
+					<!-- 本书概要 -->
+					<div class="well">
+						<p>
+							<strong>本书概要：</strong>
+							2015热播剧原著小说，男神钟汉良、九头身美女唐嫣主演！一段爱情何以笙箫皆沉默。一次告别何以爱情皆你我。我不愿将就。何以琛，约吗？
+						</p>
+					</div>
+					<div>
+						<!-- 价格 -->
+						<p>
+							<span class="greyFont">价格:</span>&nbsp;<span class="priceFont">￥14.50</span>
+						</p>
+					</div>
+					<!-- 购买按钮 -->
+					<div >
+						<button class="btn btn-lg btn-success" type="button" onclick="location='user.html'">立即购买</button>
+						&nbsp;&nbsp;&nbsp;
+						<button class="btn btn-lg btn-default" type="button" onclick="location='user.html'">我的书架</button>
+						<p class="text-right"><a href="javascript:alert('请联系管理员')" class="greyFont">遇到问题？</a></p>
+					</div>
+				</div><!-- col-sm-8 -->
+
+				<!-- 推荐、详情、留言 -->
+				<div class="col-sm-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">简介</div>
+						<div class="panel-body">
+							<h4>图书简介</h4>
+							<p> 
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								我还记得与他们初遇在人群熙攘的超市，就像在后记里写的那样，忽然就冒出那样一种感触攫住了我。也许早一步，晚一步，他们不是他们，我不是我，谁知道呢，缘分总是那么玄之又玄。我还记得那是大三的暑假，我在我的老台式机上，一遍遍的写着他们的重逢，写了十几遍，终于我满意了，他们也满意了。我还记得我在学校的机房排队，等不及了，就拿出白纸先把情节记下来，生怕灵感转瞬即逝。我还记得上课的时候他们也不安分，不断地在我脑袋里自行演绎着，让我不得不当个不专心的学生，一遍遍在笔记本上写着他们的名字，才能得到抒发后的平静。一时间有些恍然。好像是眨眼间，却已经很远了。时间真是世间最残酷又最美好的东西。从写这篇文开始，到现在，已经过去了七年，已经和以琛和默笙分开的时间一样漫长了。嗨，以琛默笙，又见面了。
+							</p>
+							<h4>编辑推荐</h4>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								顾漫的《何以笙箫默》征服了千万粉丝，见证了她们的青春成长，成就了无数少女的校园王子梦。这个冬季，蓦然回首，与之再次相遇，《何以》以更加温馨的面貌出现。
+							</p>
+							<h4>作者简介</h4>
+							<p>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								  顾漫<br/>
+								  她说，这世上必有一个人，会和她不离不弃宠辱与共，如果现在还没有，那是她没有找到，不够幸运，而不是他不存在……<br/>
+								  她说，她喜欢晒太阳，喜欢到处乱爬，喜欢悠闲度日，喜欢一切让人温暖感动的东西……<br/>
+								  她说，她的愿望很伟大，要天下太平……
+							</p>
+						</div>
+					</div>
+				</div><!-- row -->
+
+				<!-- 留言系统 -->
+				<div class="col-sm-12">
+					<div class="botBorder ">
+						<h4>图书评论</h4>
+					</div>
+					<br>
+					<div class="col-sm-12">
+						<p>共有132条评论</p>
+					</div>
+					<div class="row botBorder comment">
+						<div class="col-sm-1 col-xs-2">
+							<img class="commentImg img-responsive" src="images/detail/t2.jpg" title="头像">
+						</div>
+						<div class="col-sm-10">
+							<p><small>迎春花的秋天</small>&nbsp;&nbsp;<small class="greyFont">20116-12-01</small></p>
+							<p>已经看过很多遍，但始终很喜欢</p>
+							<p class="text-right">
+								<a class="greyFont" href="user.html">回复</a>&nbsp;&nbsp;
+								<a class="greyFont" href="javascript:alert('点赞成功')"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+								<span>0</span>
+							</p>
+						</div>
+					</div>
+					<div class="row botBorder comment">
+						<div class=" col-sm-1 col-xs-2">
+							<img class="commentImg img-responsive" src="images/detail/t3.jpg" title="头像">
+						</div>
+						<div class="col-sm-10">
+							<p><small>桂香酒洌迷人醉</small>&nbsp;&nbsp;<small class="greyFont">20116-12-01</small></p>
+							<p>感情细腻，好羡慕他们俩的爱情。愿天下有情人，执子之手，与子偕老</p>
+							<p class="text-right">
+								<a class="greyFont" href="user.html">回复</a>&nbsp;&nbsp;
+								<a class="greyFont" href="javascript:alert('点赞成功')"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+								<span>0</span>
+							</p>
+						</div>
+					</div>
+
+					<!-- 写评论 -->
+					<div class="row" style="margin: 50px 0 30px 0;">
+						<div class=" col-sm-1 hidden-xs">
+							<img class="commentImg img-responsive" src="images/t1.jpg" title="头像">
+						</div>
+
+						<div class="col-sm-10">
+							<form action="" class="form form-horizontal">
+								<div class="form-group">
+									<label for="cTitle" class="control-label col-sm-2">标题</label>
+									<div class="col-sm-10">
+										<input class="form-control" name="cTitle" type="text" id="cTitle" placeholder="选填">
+									</div>
+									
+								</div>
+								<div class="form-group">
+									<label for="cContent" class="control-label col-sm-2">内容</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" name="cContent" id="cContent" rows="4" placeholder="必填，不少于五个字"></textarea>
+									</div>
+								</div>
+								<!-- 验证码 -->
+								<div class="form-group">
+									<label for="cTest" class="control-label col-sm-2">验证码</label>
+									<div class="col-sm-2">
+										<input class="form-control" name="cTest" type="text" id="cTest">
+									</div>
+									<div class="col-sm-3"></div>
+									
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2">
+										<button type="button" class="btn btn-info">发表评论</button>
+									</div>
+								</div>
+							</form>	
+						</div>
+					</div>
+				</div><!-- row -->
+			</div><!-- col-sm-9 -->
+
+
+			<!-- 右侧功能栏目 -->
+			<div class="col-sm-3 ">
+				<div class="allBorder listPand ">
+					<h4>相关图书</h4>
+					<div class="media">
+						<a class="media-left" href="xiangqing.html">
+							<img class="" src="images/detail/r1.jpg" alt="...">
+						</a>
+						<div class="media-body">
+							<h5>《朝秦暮楚》</h5>
+							<p class="greyFont">夏桐</p>
+							<p>
+								<small class="greyFont">
+									<span class="glyphicon glyphicon-phone"></span>手机APP免费
+								</small>
+							</p>
+						</div>
+					</div>
+					<div class="media">
+						<a class="media-left" href="xiangqing.html">
+							<img class="" src="images/detail/r2.jpg" alt="...">
+						</a>
+						<div class="media-body">
+							<h5>《有一种爱情叫学霸》</h5>
+							<p class="greyFont">阿Q</p>
+							<p>
+								<small class="greyFont">
+									<span class="glyphicon glyphicon-phone"></span>手机APP免费
+								</small>
+							</p>
+						</div>
+					</div>
+				</div>	<!-- allBorder -->	
+			</div>	<!-- col-sm-3 -->
+		</div><!-- row -->	
+
+
+
+
+	<footer class="navbar-static-buttom text-center">
+		<div class="row">
+			<ul class="list-inline">
+				<li></li>
+			</ul>
+		</div>
+	</footer>
+
+
+
+
+<script src="css/bootstrap/js/jquery-3.0.0.min.js"></script>
+<script src="css/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

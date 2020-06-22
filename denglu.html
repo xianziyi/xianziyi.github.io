@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="shortcut icon" type="image/png" href="images/icon.png"/>
+	<base target="_self">
+	<title>登陆与注册</title>
+</head>
+<body class="container">
+	<!-- 导航栏 -->
+	<div class="navbar-wrapper">
+		<nav class="navbar navbar-default navbar-static-top">
+			<!-- 导航标题和缩小按钮 -->
+			<div class="navbar-header">
+				<button data-target="#navbarCollapse" type="button" class="navbar-toggle" data-toggle="collapse">
+					<span class="sr-only">Toggle navigation</span><!-- UNknown -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- 导航栏正文 -->
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li><a href="jieguo.html">
+						<span class="glyphicon glyphicon-bookmark"></span>&nbsp;每日推荐
+						</a>
+					</li>
+					<li>
+						<a href="jieguo.html">
+							<span class="glyphicon glyphicon-pencil"></span>&nbsp;人气作家
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="jieguo.html">
+							<span class="glyphicon glyphicon-fire"></span>&nbsp;畅销作品
+						</a>
+					</li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right" style="margin-right: 0px"> 
+					<li>
+						<a href="denglu.html">
+							<span class="glyphicon glyphicon-log-in"></span>&nbsp;登陆
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<!-- 搜索栏 -->
+	<div class="row bot ss">
+		<div class="col-sm-3">
+			<a href="index.html">
+				<img class="img-responsive" src="images/logo.png" title="我阅网">
+			</a>	
+		</div>
+		<div class="col-sm-5">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="请输入关键字">
+				<span class="input-group-btn">
+					<button type="button" class="btn btn-info">搜索图书</button>
+				</span>
+			</div><!-- input-group -->
+			<div class="col-sm-8" id="recom">
+				<ul class="list-inline">
+					<li><a href="xiangqing.html"><small>雷军自传</small></a></li>
+					<li><a href="xiangqing.html"><small>韩寒全集</small></a></li>
+					<li><a href="xiangqing.html"><small>龙族</small></a></li>
+				</ul>
+			</div>
+		</div><!-- col-sm-6 -->
+	</div><!-- row -->
+	
+	
+	<!-- 登陆 -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="alert alert-info text-center">
+				<p>用户登陆</p>
+			</div>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="usr" class="col-sm-4 control-label">用户名</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="usr" placeholder="用户名">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pwd" class="col-sm-4 control-label">密码</label>
+					<div class="col-sm-4">
+						<input type="password" class="form-control" id="pwd" placeholder="密码">
+						<a href="index.html">忘记密码？</a>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-4">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> 记住我
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-4">
+						<button onclick="location='user.html'" type="button" class="btn btn-default">用户登陆</button>
+						<button onclick="location='guanli.html'" type="button" class="btn btn-default">管理登陆</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- 注册 -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="alert alert-success text-center">
+				<p>用户注册</p>
+			</div>
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+					<label for="usr" class="col-sm-4 control-label">用户名</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="usr" placeholder="4-6位不含有特殊字符">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="Email" class="col-sm-4 control-label">邮箱</label>
+					<div class="col-sm-4">
+						<input type="text" class="form-control" id="Email" placeholder="邮箱">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pwd" class="col-sm-4 control-label">密码</label>
+					<div class="col-sm-4">
+						<input type="password" class="form-control" id="pwd" placeholder="6-12位区分大小写">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="pwd2" class="col-sm-4 control-label">重复密码</label>
+					<div class="col-sm-4">
+						<input type="password" class="form-control" id="pwd2" placeholder="重复密码">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-4">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> 注册成功后自动登陆
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-4 col-sm-4">
+						<button onclick="alert('暂时无法注册')" type="button" class="btn btn-info">用户注册</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<footer class="navbar-static-buttom text-center">
+		<div class="row">
+			<ul class="list-inline">
+				<li></li>
+			</ul>
+		</div>
+	</footer>
+
+<script src="css/bootstrap/js/jquery-3.0.0.min.js"></script>
+<script src="css/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

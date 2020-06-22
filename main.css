@@ -1,0 +1,154 @@
+﻿body{
+	font-family: '微软雅黑';
+}
+.bot{
+	border-bottom: 1px dotted #D0D6D9;
+}
+.navbar-default{
+	border-color: #fff;
+}
+/*导航栏图标*/
+.topPand{
+	.padding(5px,0,0,0);
+}
+.topPand img{
+	width: 150px;
+	margin-top: -10px;
+}
+#main{
+	margin-top: 50px;
+}
+#lei{
+	margin-top: 30px;
+	z-index: 2;
+	padding-bottom: 10px;
+}
+#fl ul li{
+	height: 50px;
+}
+#fl ul li span{
+	width: 100px;
+}
+.pointer{
+	float: right;cursor: pointer;
+}
+.hot{
+	background-color: #F1F1F1;
+	margin :20px 0;
+	padding-top:10px;
+}
+.price{
+	font-size: 1.2em;
+	color:#C97618;
+}
+.hot .thumbnail a>img{
+	width: 181px;
+	height: 272px;
+}
+.thumbnail:hover{
+	.box-shadow: 5px 5px 5px #D0D6D9;
+}
+.thumbnail {
+	border: none;
+	background-color: #F1F1F1;
+}
+/*搜索*/
+.ss{
+	padding: 10px 0 20px 0;
+	margin-bottom: 20px;
+}
+/*图书分类图标*/
+#accordion .badge{
+	float: right;
+	background-color: #777;
+}
+
+/*图书推荐*/
+#recom{
+	margin-top: 5px;
+}
+#recom a{
+	text-decoration: none;
+	color: #777;
+}
+.pad{
+	padding-top: 10px;
+}
+.back{
+	padding-top:10px;
+	border-radius:10px;
+	background-color: #F7F7F0;
+}
+
+/*图书详情页*/
+#bookImg{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	/*图片下小图标*/
+	#bookImgList{
+		margin-top: 10px;
+	}
+	/*标签列表*/
+	.bookLabel li{
+		margin: 3px 0;
+		padding-left: 0;
+	}
+	.bookLabel .label-default{
+		background-color: #fff;
+		color: #777;
+		border:1px solid #bbb;
+	}
+	.bookLabel .label{
+		font-weight: normal;
+	}
+	/*价格*/
+	.priceFont{
+		font-size: 25px;
+		color: #F79321;
+		font-weight: normal;
+	}
+	/*详情*/
+	.well{
+		padding: 10px;
+	}
+	/*评论*/
+	.comment{
+		margin: 10px 0;
+	}
+	.commentImg{
+		border-radius:50%;
+	}
+	/*图书列表*/
+	.listPand{
+		padding: 0 10px;
+	}
+	/*右侧广告图片*/
+	.act{
+		width: 100%;
+		margin: 5px auto;
+	}
+	.act img{
+		border-radius:5px;
+	}
+
+	/*用户信息页面*/
+	.dTitle{
+		background-color: #D9EDF7;
+		font-size: 18px;
+	}
+	/*我的图书列表*/
+	th{
+		text-align: center;
+	}
+	.mybook img{
+		width: 80px;
+		height: 100px;
+	}
+
+
+
+
+footer{
+	border-top: 1px dotted # fff;
+}
